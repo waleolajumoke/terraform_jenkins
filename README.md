@@ -12,12 +12,12 @@ terraform init
 
 ## Step 1: Plan Resources
 ```
-terraform plan -var-file="vars/dev-west-2.tfvars"
+terraform plan 
 ```
 
 ## Step 2: Apply Resources
 ```
-terraform apply -var-file="vars/dev-west-2.tfvars"
+terraform apply 
 ```
 
 ## Step 3: SSH to instance to get the admin password
