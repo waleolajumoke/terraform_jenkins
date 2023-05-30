@@ -35,6 +35,8 @@ kubectl delete all --all -n test #to delete everything in a namespace in kuberne
 docker system prune  # to delete unused docker images to cleanup memeory on system 
 docker image rm imagename  # to delete a docker image
 
+Hint: attach the test role to the jenkins EC2
+
 #create EKS cluster
 eksctl create cluster --name kubernetes-cluster --version 1.23 --region us-west-2 --nodegroup-name linux-nodes --node-type t2.xlarge --nodes 2 
 
