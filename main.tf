@@ -87,10 +87,11 @@ EOF
 
 resource "aws_instance" "web"{
   ami = var.ami
-  instance_type = "t2.large"
+  instance_type = "t2.xlarge"
   key_name = var.key_name 
   security_groups      = [aws_security_group.jenkins_sg.name]
   user_data = file("install_jenkins.sh")
+  iam_instance_profile = "${aws_iam_instance_profile.test_profile.name}"
 
   tags = {
     Name = "Jenkins"
