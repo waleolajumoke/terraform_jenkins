@@ -24,5 +24,6 @@ variable "cidr_block" {
 
 variable "ami"{
     type = string
-    default = "ami-0b5eea76982371e91"
+   # default = "ami-0c101f26f147fa7fd"
+    default = "ami-04b70fa74e45c3917"
 }
