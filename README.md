@@ -24,7 +24,7 @@ terraform plan
 terraform apply 
 ```
 
-## Step 3: SSH to instance to get the admin password
+## Step 3: Commands to get the Jenkins admin password via command line
 
 ```
 chmod 400 <keypair>
@@ -55,5 +55,7 @@ kubectl delete all --all -n devsecops   #to delete everything in a namespace in 
 
 #delete EKS cluster
 eksctl delete cluster --region=us-east-1 --name=kubernetes-cluster #delete eks cluster
-terraform destroy
+
 ```
+## Step 4: Cleanup Terraform Resources
+terraform destroy
